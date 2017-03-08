@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">EmentasUA</string>
+    <string name="food_menus_endpoint" templateMergeStrategy="preserve" translatable="false">http://services.web.ua.pt/sas/ementas?date=week&amp;format=json</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

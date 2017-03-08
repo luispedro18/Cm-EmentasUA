@@ -1,0 +1,140 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cm.ua.pt.ementasua.DetailsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/date_textView"
+        android:textSize="20sp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/name_textView"
+        android:layout_below="@+id/date_textView"
+        android:textSize="20sp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/type_textView"
+        android:layout_below="@+id/name_textView"
+        android:layout_marginBottom="30dp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cantinaEncerrada_textView"
+        android:layout_centerInParent="true"
+        android:textStyle="normal|bold"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:layout_height="100dp"
+        android:id="@+id/imageView_sopa"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:background="@drawable/sopa"
+        android:visibility="visible"
+        android:layout_width="100dp"
+        app:srcCompat="@drawable/sopa"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/type_textView" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/carne"
+        android:id="@+id/imageView_carne"
+        android:background="@drawable/carne"
+        android:layout_below="@+id/imageView_sopa"
+        android:visibility="visible"
+        android:layout_margin="10dp" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView_peixe"
+        android:layout_below="@+id/imageView_carne"
+        android:layout_margin="10dp"
+        android:background="@drawable/peixe" />
+
+    <TextView
+        android:text="Sopa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sopa"
+        android:layout_alignStart="@+id/sopa_textView"
+        android:layout_alignParentEnd="true"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:textSize="20sp"
+        android:layout_alignTop="@+id/imageView_sopa" />
+
+    <TextView
+        android:text="Prato Carne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pratocarne"
+        android:layout_alignStart="@+id/pratoCarne_textView"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:textSize="20sp"
+        android:layout_below="@+id/sopa_textView"
+        android:layout_alignTop="@+id/imageView_carne"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Prato Peixe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pratopeixe"
+        android:layout_alignStart="@+id/pratoPeixe_textView"
+        android:layout_alignParentEnd="true"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:textSize="20sp"
+        android:layout_below="@+id/pratoCarne_textView"
+        android:layout_alignTop="@+id/imageView_peixe" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:id="@+id/pratoPeixe_textView"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/imageView_peixe"
+        android:layout_alignBottom="@+id/imageView_peixe"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/pratopeixe" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:id="@+id/pratoCarne_textView"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/imageView_carne"
+        android:layout_alignBottom="@+id/imageView_carne"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/pratocarne" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:id="@+id/sopa_textView"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/imageView_sopa"
+        android:layout_alignBottom="@+id/imageView_sopa"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/sopa" />
+
+</RelativeLayout>
